@@ -4,7 +4,7 @@
 The present challenge aimed to apply machine learning and neural networks to predict if applicants will be successful if funded by Alphabet Soup, a nonprofit organization. By using the features in the dataset found in the link below, the challenge involved creating a binary classifier that could predict whether applicants will be successful if funded by Alphabet Soup.
 
 ## Methods overview:
-To achieve this, data were read from the link below:
+To achieve this, data were read from the link:
 https://static.bc-edx.com/data/dl-1-2/m21/lms/starter/charity_data.csv
 
 Once imported, a pre-processing stage involved various steps including, but not limited to dropping specific columns (depending on the optimization iteration). Cutoff values were used to create a list of classifications to be replaced. These values may have differed depending on the iteration of the code used. Pre-processed data were split into features and target arrays, and into training and testing datasets using train_test_split(). StandardScaler instances were created, the StandardScaler was fit, and the data were scaled.
