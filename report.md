@@ -30,13 +30,13 @@ Compiling, Training, and Evaluating the Model:
 
 How many neurons, layers, and activation functions did you select for your neural network model, and why? The number of initial neurons used changed on subsequent iteration of the code. Unlike the original code, the iterations of the code used 20 neurons in the first and second hidden layers, and 8 neurons in the third hidden layer. One neuron was then used in output layer. In terms of the activation functions, the 'relu' activation was used. The 'sigmoid' function was utilized in the output layer since values are normalized to a probability between 0 and 1, which is ideal for a binary classification dataset as the one in the present challenge.
 
+<img width="772" alt="Screenshot 2024-12-15 at 2 01 35 PM" src="https://github.com/user-attachments/assets/f3803cd9-dfae-4bee-ab9c-fd0051cf306b" />
+
 Were you able to achieve the target model performance? The model performance was 75.9% after three optimization iterations, hitting the target of a minimum of 75.0%.
 
 <img width="594" alt="Screenshot 2024-12-15 at 1 56 38 PM" src="https://github.com/user-attachments/assets/2be918ac-7cd5-4d12-9402-2ff1e1609c4f" />
 
 What steps did you take in your attempts to increase model performance? Several steps were taken to increase the model performance, depending on the optimization. Briefly, in the first optimization of the code, the achieved model performance was 72.4%, lower than the original iteration of the code. Here, the units of the first and second layers were changed to 20, and a third layer was added, with units = 8. "Relu" was used as the activation parameter. On the second optimization of the code, the model performance was 74.2%, higher than the previous iterations, but not reaching the target of at least 75.0%. This iteration of the code was similar to the first optimization, but in addition to adding a layer and modifying the units values, only the column 'EIN' was dropped. In the final iteration of the code, the model's performance increased to 75.9%. This iteration of the code was similar to the second optimization, with the additional modification of choosing a lower cutoff value (i.e., 10)(see code and screenshot below).
-
-<img width="772" alt="Screenshot 2024-12-15 at 2 01 35 PM" src="https://github.com/user-attachments/assets/f3803cd9-dfae-4bee-ab9c-fd0051cf306b" />
 
 ## Conclusions
 The present analysis explored various parameters to predict if applicants will be successful if funded by Alphabet Soup. By modifying several of the parameters mentioned above, the analysis successfully achieved at least 75% performance in the last code iteration.
